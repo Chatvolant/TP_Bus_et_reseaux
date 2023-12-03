@@ -61,6 +61,15 @@ Pour cela, on récupère les valeurs qui sont stockées dans le registre calib_d
 
 
 ## TP n°2 - TP2 - Interfaçage STM32 - Raspberry
+### Premier démarrage
+> Installez la carte SD dans le Raspberry et branchez l'alimentation.
+Utilisez ssh pour vous connecter à votre Raspberry. Comment le Raspberry a obtenu son adresse IP? 
+
+On a configuré au préalable la carte SD du Rasberry Pi afin qu'elle puisse se connecter au réseau ESE_Bus_Network, associée à un routeur.
+Je pense que c'est le protocole DHCP du routeur qui a attribué une adresse IP à notre Rasberry vu qu'on ne l'a pas fait manuellement.
+
+
+
 
 ## TP n°3 - Interface REST
 ### 4.1. Installation du serveur Python
