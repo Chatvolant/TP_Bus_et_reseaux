@@ -24,8 +24,40 @@ Dans notre cas, l'adresse de la I2C slave était **0x77** (écrit sur le composa
 ### 2.2. Setup du STM32
 #### Identification du BMP280
 
+![alt text](https://github.com/Chatvolant/TP_Bus_et_reseaux/blob/main/code_identif1.png)
+![alt text](https://github.com/Chatvolant/TP_Bus_et_reseaux/blob/main/code_identif2.png)
+![alt text](https://github.com/Chatvolant/TP_Bus_et_reseaux/blob/main/code_identif3.png)
+
+On nous retourne bien le bon identifiant du composant
+
+#### Identification du BMP280
+![alt text](https://github.com/Chatvolant/TP_Bus_et_reseaux/blob/main/code_identif4.png)
+![alt text](https://github.com/Chatvolant/TP_Bus_et_reseaux/blob/main/code_identif5.png)
+
+**Note** : on a une erreur si on déclare le tableau puis qu’on initialise les valeurs de cette façon :  
+uint8_t transmission_data[2] ;  
+transmission_data[0]=0xF4;  
+transmission_data[1]=0x5F;  
+
+
+#### Récupération de l'étalonnage, de la température et de la pression
+![alt text](https://github.com/Chatvolant/TP_Bus_et_reseaux/blob/main/code_identif6.png)
+![alt text](https://github.com/Chatvolant/TP_Bus_et_reseaux/blob/main/code_identif7.png)
+![alt text](https://github.com/Chatvolant/TP_Bus_et_reseaux/blob/main/code_identif8.png)
+![alt text](https://github.com/Chatvolant/TP_Bus_et_reseaux/blob/main/code_identif9.png)
+
+Nous on a mis la valeur 010 dans le registre, donc on a une résolution de 17 bits pour la température et une précision de 0.0025°C.
+
+#### Calcul des températures et des pression compensées
+
+On récupère les valeurs de dig_T1, dig_T2, dig_T3, nécessaire au calcul de la compensation de la température.
+Pour cela, on récupère les valeurs qui sont stockées dans le registre calib_data (mais que de 0x88 à 0x9D, pas tout le registre)
+
+
+
 ### 2.3. Communication I²C
-#### Communication avec le BMP280
+
+
 
 
 ## TP n°2 - TP2 - Interfaçage STM32 - Raspberry
