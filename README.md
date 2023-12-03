@@ -79,4 +79,29 @@ eleveA était le nom d'hôte de la Rasberry Pi
 ## TP n°3 - Interface REST
 ### 4.1. Installation du serveur Python
 
+#### Premier fichier Web
+
+Test serveur web avec 1er code du hello.py
+![alt text](https://github.com/Chatvolant/TP_Bus_et_reseaux/blob/main/code_identif10.png)
+
+On ajoute des lignes de code à notre fichier hello.py comme indiqué dans l'énoncé du TP
+
+![alt text](https://github.com/Chatvolant/TP_Bus_et_reseaux/blob/main/code_identif11.png)
+
+> Quel est le rôle du décorateur @app.route?  
+
+Permet de créer des pages web dans le chemin spécifié  
+
+Quel est le role du fragment <int:index>?
+Pour afficher sur une page chaque caractère individuel, spécifié avec l'indice, de la chaine de caractères qu’on a  mis sur la page welcome
+![alt text](https://github.com/Chatvolant/TP_Bus_et_reseaux/blob/main/code_identif12.png)
+
+#### Première page REST
+#### Réponse JSON
+#### 1re solution
+Avec firefox:  
+![alt text](https://github.com/Chatvolant/TP_Bus_et_reseaux/blob/main/code_identif13.png)
+
+
+
 
