@@ -66,7 +66,7 @@ Pour cela, on récupère les valeurs qui sont stockées dans le registre calib_d
 Utilisez ssh pour vous connecter à votre Raspberry. Comment le Raspberry a obtenu son adresse IP? 
 
 On a configuré au préalable la carte SD du Rasberry Pi afin qu'elle puisse se connecter au réseau ESE_Bus_Network, associée à un routeur.
-Je pense que c'est le protocole DHCP du routeur qui a attribué une adresse IP à notre Rasberry vu qu'on ne l'a pas fait manuellement.
+Je pense que c'est le  routeur qui a attribué une adresse IP à notre Rasberry en utilisant le protocole DHCP vu qu'on ne l'a pas fait manuellement.
 
 
 
