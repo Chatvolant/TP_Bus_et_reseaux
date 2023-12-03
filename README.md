@@ -69,6 +69,11 @@ On a configuré au préalable la carte SD du Rasberry Pi afin qu'elle puisse se 
 Je pense que c'est le  routeur qui a attribué une adresse IP à notre Rasberry en utilisant le protocole DHCP vu qu'on ne l'a pas fait manuellement.
 
 
+### Se connecter à la Rasberry Pi en ssh 
+Commande à executer sur cmd : ssh eleveA@192.168.88.96
+eleveA était le nom d'hôte de la Rasberry Pi
+
+**ATTENTION** Avant de débrancher la Rasberry Pi quand on a fini de l'utiliser, il faut l'éteindre via le cmd. On peut le faire avec cette commande : sudo shutdown -h now
 
 
 ## TP n°3 - Interface REST
